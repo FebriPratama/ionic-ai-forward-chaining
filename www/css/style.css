@@ -1,0 +1,32 @@
+/* Empty. Add your own CSS if you like */
+.main-logo{
+	font-size: 100px;
+	color: #e74c3c;
+}
+.main-logo-login{
+	font-size: 60px;
+	color: #e74c3c;
+}
+.text-mid{
+	text-align: center;
+}
+.no-bg{
+	background:initial;
+}
+.pull-right{
+	float: right;
+}
+.text-mid h2{
+	color: #F4B350;
+}
+.background, .background .pane, .background .item-complex {
+
+    background:url('photography.png') repeat;
+
+}
+#map {
+    height: 200px;
+}
+.scroll {
+    height: 100%;
+}

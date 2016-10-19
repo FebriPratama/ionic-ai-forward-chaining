@@ -1,0 +1,48 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Register</h1>
+  </ion-header-bar>
+  <ion-content>
+
+    <div class="spacer" style="width: 300px; height: 39px;"></div>
+
+    <div class="row">
+      <div class="col col-10"></div>
+
+      <div class="col col-80 text-mid">
+           <i class="ion-android-restaurant main-logo"></i>
+         <h2>RestoPedia</h2>
+      </div>
+
+      <div class="col col-10"></div>
+
+    </div>
+    
+    <div class="spacer" style="width: 300px; height: 39px;"></div>
+
+    <form name="credentialsForm" ng-submit="doRegister()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input type="text" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="text" ng-model="loginData.email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="loginData.password">
+        </label>
+        <label class="item">
+          <button class="button button-outline button-block button-balanced" ng-disabled="credentialsForm.$invalid" type="submit">Register</button>
+        </label>
+      </div>
+    </form>
+
+    <a class="button button-outline button-block button-calm" href="#/login">
+      Log in
+    </a> 
+
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,10 @@
+{
+  "name": "ai-ta",
+  "app_id": "f68c4d78",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://kripto.febripratama.me/api"
+    }
+  ]
+}

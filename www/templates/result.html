@@ -1,0 +1,43 @@
+<ion-view view-title="Result">
+  <ion-content>
+	<div class="list card">
+
+	  <div class="item item-avatar">
+	    <img src="img/avatar5.png">
+	    <h2>{{ solusi.rm_name }}</h2>
+	    Jarak : {{ distance.distance.text }} (Sekitar {{ distance.duration.text }} dari tempat anda sekarang)
+	  </div>
+
+	    <div class="row">
+
+	    	<p>{{ solusi.rm_desc }}</p>   
+
+	    </div>
+	    <div class="row">
+
+	    	<div id="map" class="col-offset-10 col-80" data-tap-disabled="true"></div>
+
+	    </div>
+
+		<div class="item item-image">
+
+			<ion-list>
+				<h3>Fasilitas</h3>
+			  	<ion-item ng-show="!fasilitas.length">No Facilities yet</ion-item>
+			    <ion-item ng-repeat="item in fasilitas">{{ item.f_name }}</ion-item>
+
+			</ion-list>
+
+		</div>  
+
+		<ion-slide-box>
+			<ion-slide ng-show="!photos.length">No Photos Available</ion-slide>
+			<ion-slide ng-repeat="image in photos">
+				<img ng-src="{{image.url}}" style="width:300px;height:300px;margin:auto;display:block" >
+			</ion-slide>
+		</ion-slide-box>
+
+	</div>	
+
+  </ion-content>
+</ion-view>

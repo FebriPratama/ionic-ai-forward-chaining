@@ -1,0 +1,53 @@
+<ion-view view-title="Dashboard">
+  <ion-content>
+
+		<div class="spacer" style="width: 300px; height: 39px;"></div>
+
+	<div class="row">
+
+	  <div class="col col-10"></div>
+
+	  <div class="col col-80 text-mid">
+	       <i class="ion-android-restaurant main-logo"></i>
+		   <h2>RestoPedia</h2>
+	  </div>
+
+	  <div class="col col-10"></div>
+
+	</div>
+
+	<div class="spacer" style="width: 300px; height: 39px;"></div>
+
+	<div class="row">
+
+		<hr>
+		<div class="col-10"></div>
+		<a class="button button-outline button-balanced col-80" href="#/app/start/{{ config.start_k }}">
+		  Start Finding
+		</a>
+		<div class="col-10"></div>
+
+	</div>	
+	<div class="row">
+
+		<h4>History</h4>	
+
+	</div>
+
+	  <ion-list>
+
+	  	<ion-item ng-show="!items.length">No Histories yet</ion-item>
+	    <ion-item ng-repeat="item in items" href="#/app/history/{{ item.id }}">{{ item.name }} | {{ item.created_at }}</ion-item>
+
+		<div class="row">
+
+			<a class="button button-outline button-balanced col-offset-33 col-33" href="#/app/histories/">
+			  See all history
+			</a>
+
+		</div>
+
+	  </ion-list>
+
+  </ion-content>
+</ion-view>

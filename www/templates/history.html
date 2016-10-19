@@ -1,0 +1,18 @@
+<ion-view view-title="History">
+  <ion-content>
+
+	<div class="list list-inset no-bg">	
+
+		<h4 class="title">{{ pertanyaan.k_name }}</h4>	
+
+		  <ion-list>
+
+		  	<ion-item ng-show="!jawaban.length">No Answer yet</ion-item>
+		    <ion-item ng-repeat="item in jawaban" href="{{ item.q_url }}">{{ item.q_ans }}</ion-item>
+
+		  </ion-list>
+
+	</div>
+
+  </ion-content>
+</ion-view>
